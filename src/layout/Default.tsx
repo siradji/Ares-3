@@ -1,4 +1,4 @@
-import { PropsWithChildren, useState } from 'react';
+import { PropsWithChildren } from 'react';
 import Head from 'next/head';
 
 const title = 'Food Delivery at your convenience | Order food online and get it delivered at your liking';
@@ -6,6 +6,12 @@ const description =
     'EatLater is a food delivery company that enables consumers in Africa to order food from their favourite  vendors and restaurants. Our main mission is to give people the flexibility to order food anywhere and get it delivered at the time of their choice.  We understand the predicaments of food delivery and lack of flexibility in Africa and we strongly believe ordering food should be easy and flexible.'
 
 const siteName = 'EatLater'
+import {Gothic_A1} from '@next/font/google'
+import classNames from "classnames";
+import {DesktopHeader} from "@layout/components/Header";
+
+
+const font = Gothic_A1({subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800']})
 
 export function DefaultWrapper({
                                    children,
@@ -39,9 +45,10 @@ export function DefaultWrapper({
 
                 <link rel="icon" type="image/png" sizes="70x70" href="/favicon.png" />
             </Head>
-            <main className="site_main_wrapper flex-grow">{children}</main>
-            <div className="hidden lg:block">
+            <div>
+                <DesktopHeader />
             </div>
+            <main className={classNames("site_main_wrapper flex-grow", font.className)}>{children}</main>
         </div>
     );
 }
