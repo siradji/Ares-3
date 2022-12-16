@@ -1,5 +1,9 @@
 import Link from 'next/link'
 import classNames from "classnames";
+
+
+
+
 export function HeaderInternalLink(props: {
     text: string;
     sectionName: string;
