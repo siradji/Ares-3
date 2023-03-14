@@ -7,7 +7,7 @@ import {HamburgerMenu} from "@components/Hamburger";
 
 export function DesktopHeader (): JSX.Element {
     return (
-        <header className='fixed mb-20 top-0 flex w-full bg-brand-green-500 border-b-2 border-brand-green-500 shadow-lg'>
+        <header className='flex w-full bg-primary-500 shadow-lg'>
             <Container>
                 <div className='flex  flex-row items-center justify-between w-full'>
                     <div className=''>
@@ -26,11 +26,11 @@ export function DesktopHeader (): JSX.Element {
 
 function Navbar (): JSX.Element {
     return (
-        <nav className='hidden md:block bg-brand-orange-500 rounded-[20px] py-4 shadow-lg px-5'>
+        <nav className='hidden md:block bg-white rounded-3xl py-4 shadow-lg px-5'>
             <ul className='flex flex-row items-center justify-between space-x-4'>
                 <HeaderInternalLink text='Vendors'  testId="Header.Navbar.Link.Vendors" sectionName="#vendors" />
                 <HeaderInternalLink text='Riders'  testId="Header.Navbar.Link.Riders" sectionName="#riders" />
-                <HeaderInternalLink text='Enterprise'  testId="Header.Navbar.Link.Enterprise" sectionName="#enterprise" />
+                <HeaderInternalLink text='EatLater+'  testId="Header.Navbar.Link.Enterprise" sectionName="#enterprise" />
                 <HeaderInternalLink text='How it works'  testId="Header.Navbar.Link.How-it-works" sectionName="#how-it-works" />
             </ul>
         </nav>
@@ -41,7 +41,7 @@ function Navbar (): JSX.Element {
 function DownloadButton (): JSX.Element {
     return (
         <div className='hidden md:block'>
-            <button className="text-brand-black-500 bg-white rounded-lg px-7 py-4 text-lh font-semibold">
+            <button className="text-primary-500 bg-white rounded-3xl px-7 py-4 text-lg font-semibold">
                 Download app
             </button>
         </div>
