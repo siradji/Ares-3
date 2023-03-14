@@ -10,7 +10,7 @@ import {StoreDownloadButton} from "@components/section/DownloadSection";
 
 export function Footer(): JSX.Element {
     return (
-        <footer data-testid="Site.Footer" className="bg-brand-black-500">
+        <footer data-testid="Site.Footer" className="bg-black">
             <Container className="py-20 hidden md:block">
                 <div className="flex flex-row justify-between flex-wrap">
                     <div className="flex flex-col w-1/3">
@@ -21,8 +21,7 @@ export function Footer(): JSX.Element {
                             alt="eatlater logo"
                         />
                         <div className="text-white font-medium text-lg mt-7 ">
-                            At EatLater our job is to make sure you get the best food and fast
-                            delivery service.
+                        Our main mission is to give people the flexibility to order food anywhere and get it delivered at a time of their choice. We understand the predicaments of food delivery and lack of flexibility in Africa and we strongly believe ordering food should be easy and flexible. 
                         </div>
                         <div className="text-white mt-20 text-body-sm">
                             copyright @ 2022 EatLater - All Right Reserved
@@ -58,10 +57,10 @@ export function Footer(): JSX.Element {
                     </FooterLinks>
                     <div className="flex flex-col">
                         <div className='mb-7'>
-                            <StoreDownloadButton classname='bg-brand-green-500' onClick={() => null} store='APPLE' testId='AppStore.Download.Footer' />
+                            <StoreDownloadButton classname='bg-primary-500 ' onClick={() => null} store='APPLE' testId='AppStore.Download.Footer' />
                         </div>
                         <div className="mx-6" />
-                        <StoreDownloadButton classname='bg-brand-green-500' onClick={() => null} store='GOOGLE' testId='PlayStore.Download.Footer' />
+                        <StoreDownloadButton classname='bg-primary-500 ' onClick={() => null} store='GOOGLE' testId='PlayStore.Download.Footer' />
                     </div>
                 </div>
             </Container>
@@ -118,8 +117,8 @@ export function Footer(): JSX.Element {
                                 </ul>
                             </FooterLinks>
                             <div className='mt-16 flex flex-col'>
-                                <StoreDownloadButton classname='bg-brand-green-500' onClick={() => null} store='APPLE' testId='AppStore.Download.Footer' />
-                                <StoreDownloadButton classname='bg-brand-green-500 mt-10' onClick={() => null} store='GOOGLE' testId='PlayStore.Download.Footer' />
+                                <StoreDownloadButton classname='bg-primary-500 ' onClick={() => null} store='APPLE' testId='AppStore.Download.Footer' />
+                                <StoreDownloadButton classname='bg-primary-500 mt-10' onClick={() => null} store='GOOGLE' testId='PlayStore.Download.Footer' />
                             </div>
                         </div>
                         </div>
