@@ -2,6 +2,7 @@ import { PropsWithChildren } from 'react';
 import {Poppins} from '@next/font/google'
 import classNames from "classnames";
 import {DesktopHeader} from "@layout/components/Header";
+import { Footer } from './components/Footer';
 
 
 const font = Poppins({weight: ['100', '200', '300', '400', '500', '600', '700', '800']})
