@@ -5,7 +5,7 @@ import { GenericButtonLink } from "@components/buttons/GenericButton";
 
 export function VendorRiderSection (): JSX.Element {
     return (
-        <section id='#vendorsRiders' className="mt-10 md:mt-40">
+        <section id='#vendors' className="mt-10 md:mt-40">
             <div className="flex flex-row mb-20 justify-center items-center w-full">
                     <h1 className="font-bold text-black text-4xl">Beyond food</h1>
                 </div>
